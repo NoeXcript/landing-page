@@ -1,0 +1,13 @@
+<div class="d-flex gap-1 align-items-center">
+    @if(!this.linkTo){
+    <a href="javascript:void(0)" class="d-flex gap-1 align-items-center">
+        <img [src]="this.icon" alt="" class="icon-link">
+        <p>{{this.name}}</p>
+    </a>
+    } @else {
+    <a [routerLink]="this.linkTo" class="d-flex gap-1 align-items-center">
+        <img [src]="this.icon" alt="" class="icon-link">
+        <p>{{this.name}}</p>
+    </a>
+    }
+</div>

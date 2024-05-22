@@ -8,4 +8,44 @@
   --color-follower: #f22525;
   --color-opacity-follower: #f77c7c;
   --color-player: #ff2d6c;
+  --color-white: #ffffff;
+  --color-blue: #191821;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+
+  body {
+    width: 100%;
+    background-color: var(--main-color);
+  }
+}
+l-btn {
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  cursor: pointer;
+
+  &.l-btn-avatar {
+    background-color: var(--color-hover-link);
+    color: var(--color-white);
+  }
+  &.l-btn-filter {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+
+    &.active,
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-blue);
+    }
+  }
 }
